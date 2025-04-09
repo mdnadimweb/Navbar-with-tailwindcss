@@ -1,3 +1,6 @@
+// import { useForm, handlesubmit } from "react-hook-form";
+// import { useState } from "react";
+
 function Contact() {
   return (
     <>
@@ -7,7 +10,9 @@ function Contact() {
             contact form
           </h1>
           <div className="input_box flex justify-center  flex-col">
-            <label htmlFor="">Name:</label>
+            <label className="text-red-700" htmlFor="">
+              Name:
+            </label>
             <input
               className="my-2 border border-zinc-400 py-1 px-2"
               type="text"
@@ -15,7 +20,9 @@ function Contact() {
             />
           </div>
           <div className="input_box flex justify-center  flex-col">
-            <label htmlFor="">Email:</label>
+            <label className="text-red-700" htmlFor="">
+              Email:
+            </label>
             <input
               className="my-2 border border-zinc-400 py-1 px-1"
               type="email"
@@ -23,7 +30,9 @@ function Contact() {
             />
           </div>
           <div className="input_box flex justify-center  flex-col">
-            <label htmlFor="">Age:</label>
+            <label className="text-red-700" htmlFor="">
+              Age:
+            </label>
             <input
               className="my-2 border border-zinc-400 py-1 px-1"
               type="text"
@@ -31,7 +40,9 @@ function Contact() {
             />
           </div>
           <div className="input_box flex justify-center  flex-col">
-            <label htmlFor="">Password:</label>
+            <label htmlFor="" className="text-red-700">
+              Password:
+            </label>
             <input
               className="my-2 border  border-zinc-400 py-1 px-1 "
               type="password"
@@ -39,12 +50,19 @@ function Contact() {
             />
           </div>
           <div className="input_box flex justify-center  flex-col">
-            <label htmlFor="">Confirm Password :</label>
+            <label htmlFor="" className="text-red-700">
+              Confirm Password :
+            </label>
             <input
               className="my-2 border border-zinc-400 py-1 px-1 "
               type="password"
               placeholder="Confirm Password"
             />
+          </div>
+          <div className="button">
+            <button className="bg-green-100 text-black border border-red-600 px-4 py-2 text-2xl font-bold mt-5 self-center ">
+              Submit
+            </button>
           </div>
         </form>
       </div>
